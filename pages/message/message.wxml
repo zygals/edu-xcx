@@ -1,0 +1,27 @@
+<view class='heart content' wx:for="{{list}}" wx:key="index_">
+  <image class='ren' src="{{item.vistar}}"></image>
+  <image class='tou' src="../../images/tou.png"></image>
+  <view class='heart_con' >
+    <view class='heart_con1 '>
+      <view class='font1'>{{item.nickname}}</view>
+      <view class='font2'>{{item.create_time}}</view>
+    </view>
+    <view class='heart_con2 content'>
+        <navigator url="/pages/bookDetail/bookDetail?good_id={{item.good_id}}">
+          <view class='hear_inner1'>
+            <image src="{{imgurl+item.img}}"></image>
+            <view>{{item.title}}</view>
+          </view>
+        </navigator>
+        <view class='hear_inner2' bindlongtap="delrow" data-order_id = "{{item.order_id}}" data-good_id="{{item.good_id}}">
+              <view class='hear_inn'>
+                  <scroll-view scroll-y class='scorll_cont'>
+                    {{item.cont}}
+                  </scroll-view>
+              </view>
+          </view>
+    </view>
+
+  </view>
+</view>
+  <view class="to_bottom" hidden="{{dxHidden}}">--已到底线--</view>

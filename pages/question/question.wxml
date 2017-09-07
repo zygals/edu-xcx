@@ -1,0 +1,58 @@
+<!-- 搜索模块 -->
+<form bindsubmit="submitSearch">
+  <view class='sousuo content'>
+
+    <view class="btn_wrap">
+      <button form-type="submit" class="btn_search"><image src="../../images/sou.png"></image></button>
+    </view>
+    <view class="input_keywords">
+      <input type="text" name='title' placeholder="请输入搜索内容" placeholder-style="color:grey;" confirm-type="搜索" bindconfirm="inputConfirm" />
+    </view>
+
+
+  </view>
+</form>
+
+<!-- 分类模块 -->
+<view class="search-nav">
+  <view class="nav-title">
+    <block wx:if="{{cates.length>0}}">
+      <view class='nav-name' bindtap="tapGetGoodsByCateId" data-cate_id="0">
+          全部
+      </view>
+      <block wx:for="{{cates}}" wx:key='id'>
+        <view class='nav-name' bindtap="tapGetGoodsByCateId" data-cate_id="{{item.id}}">
+          {{item.title}}
+        </view>
+      </block>
+
+
+    </block>
+    <block wx:else>
+      <view class="no_cont">请在后台添加</view>
+    </block>
+  </view>
+</view>
+
+<view class="wrap">
+  <block wx:if="{{goods.length>0}}">
+    <view class="course" wx:for="{{goods}}" wx:key="id">
+      <navigator url="/pages/bookDetail/bookDetail?good_id={{item.id}}">
+        <view class="course-pic">
+          <image src="{{imgurl+item.img}}"></image>
+        </view>
+        <view class="course-desc">
+          <view class="course-name">
+            <text class='tenant'>{{item.title}}
+      <text class='price'> ¥ {{item.price}}</text>
+            </text>
+          </view>
+        </view>
+      </navigator>
+    </view>
+  </block>
+  <block wx:else>
+    <view class="no_cont">请在后台添加</view>
+  </block>
+  <view class="to_bottom" hidden="{{dxHidden}}">--已到底线--</view>
+</view>

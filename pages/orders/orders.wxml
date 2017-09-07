@@ -1,0 +1,49 @@
+<view class="conatienr">
+
+  <view class="orderdetail" wx:for="{{orders}}" wx:for-item="order" wx:key="id">
+    <view class="orderinfo">
+      <view class="no">订单编号：{{order.orderno}}</view>
+      <view class="status">
+        <text>状态：{{order.st}},{{order.good_st}}</text>
+        <text class="sum_price_wrap"> 总价：<text class="sum_price">￥{{order.sum_price}}</text> </text>
+      </view>
+    </view>
+    <block wx:for="{{order.goods}}" wx:for-item="good">
+      <navigator url="/pages/bookDetail/bookDetail?good_id={{good.good_id}}">
+        <view class="goodss">
+          <view class="tpic">
+            <image src="{{imgurl+good.img}}"></image>
+          </view>
+          <view class="pdetail">
+            {{good.good_name}}
+            <view class="prge">
+              <text class="price">￥{{good.price}}</text>
+              <text class="geshu">X {{good.nums}}</text>
+            </view>
+          </view>
+        </view>
+      </navigator>
+    </block>
+    <block wx:if="{{order.st=='未支付'}}">
+      <button bindtap="cancelOrder" data-order_id="{{order.id}}">取消</button>
+      <navigator url="/pages/order/order?order_id={{order.id}}">
+        <button>去支付</button>
+      </navigator>
+    </block>
+
+    <button wx:if="{{order.st=='已支付' && order.good_st=='已发货'}}" bindtap="tapHaveTake" data-order_id="{{order.id}}">
+    确认收货</button>
+    <block wx:if="{{order.st=='已支付' && order.good_st=='已收货'}}">
+      <navigator url="/pages/user/user?order_id={{order.id}}">
+        <button bindtap="tapPingjia">添加评价</button>
+      </navigator>
+    </block>
+     <block wx:if="{{order.st=='用户取消' || order.good_st=='已评价' || order.good_st=='已收货'}}">
+ <button bindtap="tapDel"  data-order_id="{{order.id}}">删除</button>
+         </block>
+  </view>
+
+  <view class="gel"></view>
+  <view class="to_bottom" hidden="{{dxHidden}}">--已到底线--</view>
+
+</view>

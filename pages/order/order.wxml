@@ -1,0 +1,62 @@
+<view class="conatienr">
+
+<block wx:if="{{order.address_id==0}}">
+ 
+      <view class="no_address_wrap" bindtap="chooseAdress_">
+          <view class="no_address"><icon type="warn"  class="icon_address"/>请先添加地址</view>
+      </view>
+  
+</block>
+
+<block wx:else>
+    <view class="namecon"  bindtap="chooseAdress_">
+          <view>
+            <text class="myname">{{address.true_name}}</text>
+            <text class="mytel">{{address.mobile}}</text>
+          </view>
+          <text class="dzhi">{{address.pcd}} {{address.info}}</text>
+          <view class="hr"></view>
+      </view>
+</block>
+    <view class="gel"></view>
+    <view class="orderdetail">
+        <view class="goodss" wx:for="{{orderGood}}" wx:key='index'>
+          <view class="tpic">
+              <image src="{{imgurl+item.img}}"></image>
+            </view>
+            <view class="pdetail">
+              {{item.title}}
+            <view class="prge">
+              <text class="price">￥{{item.price}}</text>
+              <text class="geshu">X {{item.nums}}</text>
+            </view>
+            </view>
+        </view>
+    </view>
+   <!-- <view class="selo">
+      <text class="gmsl">购买数量</text>
+      <text class="czuo">
+        <text class="jian" bindtap="minusNum">-</text>
+        <text class="jjcon">{{orderInfo.flower.nums}}</text>
+        <text class="jia bindtap="plusNum">+</text>
+      </text>
+    </view>-->
+    <view class="selo">
+      <text class="gmsl">配送方式</text>
+      <text class="czuo">快递免邮 </text>
+    </view>
+    <view class="selo b3">
+      <text class="gmsl">配送时间</text>
+      <text class="czuo tl">15:00之前下单，当开发货</text>
+    </view>
+    <view class="selo b3">
+      <text class="gmsl">运费险</text>
+      <text class="czuo tl">卖家送，确认收货前可理赔</text>
+    </view>
+ <view class="selo b3">
+    </view>
+    <view class="pay">
+      <text class="fprice">实付款：<text class="moeny"> ￥ {{order.sum_price}}</text></text>
+      <button bindtap="tapPayNow" data-order_id="{{order.id}}">立即支付</button>
+    </view>
+</view>

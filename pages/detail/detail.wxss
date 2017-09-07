@@ -1,0 +1,46 @@
+/* pages/detail/detail.wxss */
+/* pages/zti/zti.wxss */
+.container{
+  display: flex;
+  flex-direction: column;
+  margin: 0 20rpx;
+  
+}
+.zttitle{
+  width: 100%;
+  height: 60rpx;
+  line-height: 60rpx;
+  margin: 25rpx 0;
+  font-weight: bold;
+}
+.timelai{
+  width:100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 50rpx auto;
+  color: #999;
+}
+.timelai .time,.timelai .laiy{
+  height: 60rpx;
+  line-height: 60rpx;
+  font-size: 12px;
+  margin-right: 20rpx;
+}
+.timelai .time {
+  margin-left: 5rpx;
+}
+.wzcon{
+  width: 94%;
+  height: auto;
+  margin: 20rpx auto;
+}
+.wzcon image{
+  width: 100%;
+
+}
+.wzcon .wzi{
+  width: 100%;
+  margin-top: 20rpx;
+  text-indent: 2em;
+  font-size: 14px;
+}

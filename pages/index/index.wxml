@@ -1,0 +1,162 @@
+<!-- 轮播图  -->
+<swiper indicator-dots="{{true}}" autoplay="{{true}}" interval="3000" duration="400" circular="true" style="height: 170px">
+  <block wx:for="{{ads}}" wx:for-item="ad" wx:key='id'>
+    <swiper-item>
+      <image src="{{imgurl+ad.img}}" class="slide-image" width="750rpx"  />
+    </swiper-item>
+  </block>
+</swiper>
+<!--导航区  -->
+<view class="content">
+  <view class='index_center'>
+    <navigator url="/pages/college/college">
+      <image src="../../images/aa1.png"></image>
+      <view>院校</view>
+    </navigator>
+  </view>
+  <view class='index_center'>
+    <navigator url="/pages/question/question?type_id=2&school_id=0">
+      <image src="../../images/aa2.png"></image>
+      <view>真题</view>
+    </navigator>
+
+  </view>
+  <view class='index_center'>
+    <navigator url="/pages/question/question?type_id=1&school_id=0">
+      <image src="../../images/aa3.png"></image>
+      <view>图书</view>
+    </navigator>
+  </view>
+
+</view>
+<!-- content -->
+<view class="wrap">
+
+  <!-- 院校推荐  -->
+  <view class='boon'>
+    <!-- 标题栏  -->
+    <view class='boon_top'>
+      <view class="nav-title">
+        <view class='heng'></view>
+        <view class='size'>院校推荐</view>
+        <view class='heng'></view>
+      </view>
+      <navigator url="/pages/college/college">
+        <view class='more'> 更多> </view>
+      </navigator>
+    </view>
+    <!-- 内容区  -->
+    <view class="recommend-list">
+      <view class="recommend">
+   
+        <block wx:if="{{shoolRecTop.length>0}}">
+          <view class="college-pic" wx:for='{{shoolRecTop}}' wx:key='id'>
+            <navigator url="/pages/cDetail/cDetail?school_id={{item.school_id}}&school_name={{item.school_name}}">
+              <image src="{{imgurl+item.img}}"></image>
+            </navigator>
+            <view class='college'>{{item.school_name}}</view>
+          </view>
+        </block>
+        <block wx:else>
+          <view class="no_cont">请在后台添加院校推荐</view>
+        </block>
+      </view>
+      <view class="recommend">
+        <block wx:if="{{shoolRecBottom.length>0}}">
+          <view class="college-pic" wx:for='{{shoolRecBottom}}' wx:key='id'>
+             <navigator url="/pages/cDetail/cDetail?school_id={{item.school_id}}&school_name={{item.school_name}}">
+              <image src="{{imgurl+item.img}}"></image>
+            </navigator>
+            <view class='college'>{{item.school_name}}</view>
+          </view>
+        </block>
+        <block wx:else>
+          <view class="no_cont">请在后台添加院校推荐</view>
+        </block>
+      </view>
+    </view>
+  </view>
+
+  <view class='height12'></view>
+
+  <!-- 选课报名  -->
+  <view class='boon course-boon'>
+    <!-- 标题栏  -->
+    <view class='boon_top'>
+      <view class="nav-title">
+        <view class='heng'></view>
+        <view class='size'>精选图书</view>
+        <view class='heng'></view>
+      </view>
+         <navigator url="/pages/question/question?type_id=1&school_id=0">
+        <view class='more'> 更多> </view>
+      </navigator>
+    </view>
+    <!-- 内容区  -->
+    <view class="course-list">
+      <block wx:if="{{bookRec.length>0}}">
+        <view class="course" wx:for="{{bookRec}}" wx:key='id'>
+          <navigator url="/pages/bookDetail/bookDetail?good_id={{item.id}}">
+            <view class="course-pic">
+              <image src="{{imgurl+item.img}}"></image>
+            </view>
+            <view class="course-desc">
+              <view class="course-name">
+                <text class='tenant'>{{item.title}}
+            <text class='price'> ¥ {{item.price}}</text>
+                </text>
+              </view>
+            </view>
+          </navigator>
+
+        </view>
+      </block>
+      <block wx:else>
+        <view class="no_cont">请在后台添加书目首页推荐</view>
+      </block>
+    </view>
+  </view>
+
+  <view class='height12'></view>
+
+  <view class='boon read-boon'>
+    <!-- 标题栏 -->
+    <view class='boon_top'>
+      <view class="nav-title">
+        <view class='heng'></view>
+        <view class='size'>最新资讯</view>
+        <view class='heng'></view>
+      </view>
+      <navigator url="/pages/guide/guide" open-type="switchTab">
+        <view class='more'> 更多> </view>
+      </navigator>
+    </view>
+    <!-- 内容区 -->
+    <view class="course-list">
+    <block wx:if="{{articleRec.length>0}}" >
+      <view class="course" wx:for="{{articleRec}}" wx:key="id">
+        <!-- 左侧图片区
+        <view class="course-pic">
+          <image src="../../images/rm/read-pic.png"></image>
+        </view> -->
+        <!-- 右侧描述区 -->
+        <view class="read-desc">
+          <view class="read-name">
+            <view class='read-title'>·   {{item.title}}</view>
+            <view class="read-time">{{item.create_time}}</view>
+            <view class='read-content'> {{item.cont}}...
+              <navigator url="/pages/detail/detail?article_id={{item.id}}">
+                <text class='read-more'>详情>></text>
+              </navigator>
+            </view>
+          </view>
+        </view>
+      </view>
+      </block>
+      <block wx:else>
+        <view class="no_cont">请在后台添加资讯首页推荐</view>
+      </block>
+      
+    </view>
+  </view>
+</view>

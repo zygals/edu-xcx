@@ -1,0 +1,70 @@
+<view class="wrap">
+  <view class="course">
+    <!-- 左侧图片区 -->
+    <view class="course-pic">
+      <image src="../../images/rm/read-pic.png"></image>
+    </view>
+    <!-- 右侧描述区 -->
+    <view class="read-desc">
+      <view class="read-name">
+        <view class='read-title'>我国医药最高学府培养硕士超200人</view>
+        <view class='read-content'> 我国唯一经教育部批准的公办藏医药高等学府--西藏藏医学院，6日举行毕业典礼，24名硕士研究生获得毕业证书......
+          <navigator url="../detail/detail?id={{name.id}}">
+            <text class='read-more'>详情>></text>
+          </navigator>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="course">
+    <!-- 左侧图片区 -->
+    <view class="course-pic">
+      <image src="../../images/rm/read-pic.png"></image>
+    </view>
+    <!-- 右侧描述区 -->
+    <view class="read-desc">
+      <view class="read-name">
+        <view class='read-title'>我国医药最高学府培养硕士超200人</view>
+        <view class='read-content'> 我国唯一经教育部批准的公办藏医药高等学府--西藏藏医学院，6日举行毕业典礼，24名硕士研究生获得毕业证书......
+          <navigator url="../detail/detail?id={{name.id}}">
+            <text class='read-more'>详情>></text>
+          </navigator>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="course">
+    <!-- 左侧图片区 -->
+    <view class="course-pic">
+      <image src="../../images/rm/read-pic.png"></image>
+    </view>
+    <!-- 右侧描述区 -->
+    <view class="read-desc">
+      <view class="read-name">
+        <view class='read-title'>我国医药最高学府培养硕士超200人</view>
+        <view class='read-content'> 我国唯一经教育部批准的公办藏医药高等学府--西藏藏医学院，6日举行毕业典礼，24名硕士研究生获得毕业证书......
+          <navigator url="../detail/detail?id={{name.id}}">
+            <text class='read-more'>详情>></text>
+          </navigator>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="course">
+    <!-- 左侧图片区 -->
+    <view class="course-pic">
+      <image src="../../images/rm/read-pic.png"></image>
+    </view>
+    <!-- 右侧描述区 -->
+    <view class="read-desc">
+      <view class="read-name">
+        <view class='read-title'>我国医药最高学府培养硕士超200人</view>
+        <view class='read-content'> 我国唯一经教育部批准的公办藏医药高等学府--西藏藏医学院，6日举行毕业典礼，24名硕士研究生获得毕业证书......
+          <navigator url="../detail/detail?id={{name.id}}">
+            <text class='read-more'>详情>></text>
+          </navigator>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

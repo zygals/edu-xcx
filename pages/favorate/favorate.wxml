@@ -1,0 +1,31 @@
+<view class="wrap">
+  <view class="course-content">
+    <block wx:if="{{list.length>0}}">
+      <block wx:for="{{list}}" wx:key='id'>
+        <view class="course" bindlongtap="delrow" data-good_id="{{item.good_id}}">
+          <view class="course-title">
+            <view class="tag">{{item.type}}</view>
+            <view class="course-time">{{item.create_time}}</view>
+          </view>
+          <navigator url="/pages/bookDetail/bookDetail?good_id={{item.good_id}}">
+            <view class="course-pic">
+              <image src="{{imgurl+item.img}}"></image>
+            </view>
+          </navigator>
+          <view class="course-desc">
+            <view class="course-name">
+              <text class='tenant'>{{item.title}}
+            <text class='price'> ¥ {{item.price}}</text>
+              </text>
+            </view>
+          </view>
+
+        </view>
+      </block>
+    </block>
+    <block wx:else>
+      <view class="no_cont">暂无收藏</view>
+    </block>
+    <view class="to_bottom" hidden="{{dxHidden}}">--已到底线--</view>
+  </view>
+</view>

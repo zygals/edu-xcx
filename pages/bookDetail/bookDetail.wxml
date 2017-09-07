@@ -1,0 +1,37 @@
+<view class="wrap">
+  <block wx:if="{{good!=='' && good.id>0}}">
+    <view class="book-head">
+      <view class="book-banner">
+        <image src="{{imgurl+good.img_big}}"></image>
+      </view>
+    </view>
+
+    <view class="book-content">
+      <view class="book-name"> 名称：<text>{{good.title}}</text></view>
+      <view class="book-price">价格：<text>￥{{good.price}}</text></view>
+      <view class="book-stack">库存：<text>{{good.store}}件</text></view>
+      <block wx:if="{{good.good_attrs.length>0}}">
+        <view wx:for="{{good.good_attrs}}" wx:key="id" class="book-stack">{{item.attr_name}}：<text>{{item.value}}</text></view>
+      </block>
+      <view class="book-stack">说明：<text>{{good.desc}}</text></view>
+    </view>
+  </block>
+  <block wx:else>
+    <view class="no_cont">此资料不存在！</view>
+  </block>
+</view>
+<view class="book-footer">
+  <view class="foot-content">
+    <view class="collect">
+      <view class="collect-content" bindtap="collect" data-good_id="{{good.id}}" >
+        <image src="{{imgurlstar}}"></image>
+        <view class="collection" style="color: {{color}}">{{collection}}
+        </view>
+      </view>
+  
+        <view class="pay" bindtap="tapAddOrder">提交订单 
+        </view>
+    
+    </view>
+  </view>
+</view>

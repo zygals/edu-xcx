@@ -1,0 +1,55 @@
+{
+  "pages":[
+    
+      "pages/index/index",
+    "pages/bookDetail/bookDetail",
+      "pages/favorate/favorate",
+      "pages/question/question",
+          "pages/detail/detail",
+    "pages/orders/orders",
+    "pages/order/order",
+    "pages/cDetail/cDetail",
+
+      "pages/zx/zx",
+    "pages/college/college",
+    "pages/user/user",
+    "pages/personal/personal",
+   
+    "pages/guide/guide",
+    "pages/infomation/infomation",
+    "pages/message/message"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#50a1fd",
+    "navigationBarTitleText": "环球研究生教育",
+    "navigationBarTextStyle":"#fff"
+  },
+  "tabBar": {
+    "color": "#666",
+    "selectedColor":"#50a1fd",
+    "borderStyle":"white",
+    "position":"bottom",
+    "list": [
+       {
+         "pagePath": "pages/index/index",
+          "text": "首页",
+          "iconPath": "images/dd1.png",
+          "selectedIconPath": "images/d1.png"
+        },
+        {
+          "pagePath": "pages/guide/guide",
+          "text": "资讯",
+           "iconPath": "images/dd2.png",
+          "selectedIconPath": "images/d2.png"
+        },
+        
+         {
+          "pagePath": "pages/personal/personal",
+          "text": "我的",
+           "iconPath": "images/dd4.png",
+          "selectedIconPath": "images/d3.png"
+        }
+      ]
+  }
+}

@@ -1,0 +1,35 @@
+<view class="c-head">
+  <view class="c-banner">
+    <image src="{{imgurl+school.img_big}}"></image>
+  </view>
+</view>
+<view class="c-content">
+  <view class="c-nav">
+    <view class="c-tab">
+      <navigator url="/pages/question/question?school_id={{school_id}}&school_name={{school_name}}&type_id=2">
+        <view class="c-icon">
+          <image src="../../images/tab1.png"></image>
+        </view>
+        <view class="c-title">真题</view>
+      </navigator>
+
+    </view>
+    <view class="c-tab">
+      <navigator url="/pages/question/question?school_id={{school_id}}&school_name={{school_name}}&type_id=1">
+        <view class="c-icon">
+          <image src="../../images/tab2.png"></image>
+        </view>
+        <view class="c-title">图书</view>
+      </navigator>
+    </view>
+    <view class="c-tab">
+      <navigator url="/pages/zx/zx?school_id={{school_id}}&school_name={{school_name}}">
+        <view class="c-icon">
+          <image src="../../images/tab3.png"></image>
+        </view>
+        <view class="c-title">资讯</view>
+      </navigator>
+    </view>
+
+  </view>
+</view>

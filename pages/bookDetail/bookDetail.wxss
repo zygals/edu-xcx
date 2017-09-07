@@ -1,0 +1,60 @@
+.wrap {
+  width: 96%;
+  margin: 0 auto;
+}
+
+.book-head {
+  text-align: center;
+  border-bottom: 1rpx dashed #bfbfbf;
+}
+.book-head image {
+  width: 72%;
+  height: 600rpx;
+  margin: 40rpx 0;
+}
+
+.book-content {
+  font-size: 28rpx;
+  color: #757474;
+  padding-bottom: 100rpx;
+}
+.book-content view {
+  padding: 30rpx 0;
+  border-bottom: 1rpx dashed #bfbfbf;
+  letter-spacing: 1rpx;
+  line-height: 40rpx;
+}
+
+.book-footer {
+  position: relative;
+  bottom: 0;
+}
+.foot-content {
+  text-align: center;
+}
+.collect {
+  width: 750rpx;
+  display: flex;
+  align-items: center;
+  font-size: 24rpx;
+  border: 1rpx solid #dcd9da;
+}
+.collect-content {
+  width: 76%;
+  padding: 12rpx 0;
+}
+.collect image {
+  width: 36rpx;
+  height: 32rpx;
+  margin-bottom: 8rpx;
+}
+.pay {
+  padding: 0 20rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  background-color: #fe7501;
+  color: #fff;
+  font-size: 32rpx;
+  font-weight: bold;
+  letter-spacing: 2rpx;
+}

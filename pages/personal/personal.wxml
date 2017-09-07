@@ -1,0 +1,38 @@
+<view class='person'>
+    <view class='person-head'>
+        <image src="../../images/person-banner.png">
+          <view class='person-info'>
+            <navigator url="/pages/profile/profile">
+              <image src="{{userInfo.avatarUrl}}"></image>
+            </navigator>
+              <view class="person-name">
+                <view class='sp1'>{{userInfo.nickName}}</view>
+                <view class='sp2'>用户名：{{user_name}} </view>
+              </view>           
+          </view>
+        </image>
+    </view>
+</view>
+<view class="person-list">
+  <navigator url="/pages/favorate/favorate">
+    <view class='list'>
+        <image class='im1' src="../../images/wo1.png"></image>
+        <view class='list_font'>我的收藏</view>
+        <image class='im2' src="../../images/right.png"></image>
+    </view>
+  </navigator>
+  <navigator url="/pages/orders/orders">
+      <view class='list'>
+          <image class='im1' src="../../images/wo2.png"></image>
+          <view class='list_font'>我的订单</view>
+          <image class='im2' src="../../images/right.png"></image>
+      </view>
+  </navigator>
+  <navigator url="/pages/message/message">
+      <view class='list'>
+          <image class='im1' src="../../images/wo4.png"></image>
+          <view class='list_font'>我的评价</view>
+          <image class='im2' src="../../images/right.png"></image>
+      </view>
+  </navigator>
+</view>

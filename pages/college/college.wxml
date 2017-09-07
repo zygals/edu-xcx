@@ -1,0 +1,36 @@
+<!-- 搜索模块 -->
+<form bindsubmit="submitSearch">
+  <view class='sousuo content'>
+    <view class="btn_wrap">
+      <button form-type="submit" class="btn_search"><image src="../../images/sou.png"></image></button>
+    </view>
+    <view class="input_keywords">
+      <input type="text" name='title' placeholder="请输入搜索标题" placeholder-style="color:grey;" confirm-type="搜索" bindconfirm='inputConfirm' />
+    </view>
+  </view>
+</form>
+<!-- 内容模块 -->
+<view class="wrap">
+  <view class="college-content">
+    <block wx:if="{{schools.length>0}}">
+      <view class="college-list" wx:for="{{schools}}" wx:key="id">
+        <navigator url="/pages/cDetail/cDetail?school_id={{item.id}}&school_name={{item.title}}">
+          <view class="college-pic">
+            <image src="{{imgurl+item.img}}"></image>
+          </view>
+          <view class="college-desc">
+            <view class="college-intro">
+              <view class='college-name'>{{item.title}}</view>
+              <view class='location'>所在地: {{item.city}}</view>
+              <view class='belong'>院校隶属: {{item.lishu}}</view>
+            </view>
+          </view>
+        </navigator>
+      </view>
+    </block>
+    <block wx:else>
+      <view class="no_cont">暂无院校数据</view>
+    </block>
+  </view>
+  <view class="to_bottom" hidden="{{dxHidden}}">--已到底线--</view>
+</view>

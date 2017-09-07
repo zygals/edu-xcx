@@ -1,0 +1,160 @@
+/* pages/order/order.wxss */
+.conatienr{
+  display: flex;
+  flex-direction: column;
+  color:#999;
+  font-size: 16px;
+}
+.no_address_wrap{
+  text-align: center;
+  height:85rpx;
+  
+  line-height:85rpx;
+
+}
+.icon_address{
+  margin-right:30rpx;
+}
+.namecon{
+  width: 100%;
+  height: 150rpx;
+  margin-top: 20rpx;
+  padding:  20rpx; 
+  padding-bottom: 40rpx;
+}
+.namecon .myname{
+  width: 20%;
+  display: inline-block;
+}
+.namecon .mytel{
+  width: 74%;
+  text-align: right;
+  display: inline-block;
+}
+.dzhi{
+  margin-top: 40rpx;
+  display: inline-block;
+}
+.hr{
+  width: 100%;
+  height: 1px;
+  background-color: #ECECEC;
+  margin-top: 20rpx;
+  
+}
+.gel{
+  width: 100%;
+  height: 30rpx;
+  background-color: #ECEDEB;
+}
+.orderdetail{
+  width: 100%;
+  height: auto;
+}
+.orderdetail .goodss{
+  width: 100%;
+  margin: 25rpx 0;
+  display: flex;
+  flex-direction: row;
+  background-color: #F7F7F7;
+  padding: 25rpx 0;
+}
+.tpic{
+  width: 84px;
+  height: 84px;
+  text-align: center;
+  }
+.tpic image{
+  width: 80%;
+  height: 80%;
+  margin-top: 15rpx;
+}
+.pdetail{
+  width: 72%;
+  height: auto;
+  margin-left: 5%;
+  font-size: 14px;
+  margin-right: 45rpx;
+}
+.prge{
+  width: 100%;
+  height: 60rpx;
+  line-height: 60rpx;
+  margin-top: 20rpx;
+  display: flex;
+  flex-direction: row;
+}
+.price{
+  width: 50%;
+  color:#f00;
+}
+.geshu{
+  width:40%;
+  text-align: right;
+}
+.selo{
+  width: 100%;
+  height: 120rpx;
+  display: flex;
+  flex-direction: row;
+  border-top: 1px solid #ececec;
+  line-height: 120rpx;
+  padding: 20rpx;
+}
+.selo .gmsl{
+  width: 50%;
+}
+.selo .gmsl.b3{
+  width: 16%;
+}
+.selo .czuo{
+  width: 40%;
+  text-align: right;
+}
+.selo .czuo.tl{
+  text-align: left;
+  width: 83%;
+}
+.selo .czuo .jian,.selo .czuo .jia{
+  width: 40rpx;
+  height: 40rpx;
+  text-align: center;
+  line-height: 40rpx;
+  display: inline-block;
+  background-color: #EEE;
+}
+.selo .czuo .jjcon{
+  width: 60rpx;
+  height: 40rpx;
+  text-align: center;
+  line-height: 40rpx;
+  display: inline-block;
+  background-color: #fff;
+}
+.pay{
+  width: 100%;
+  height: 110rpx;
+  line-height: 110rpx;
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  bottom: 0;
+}
+.pay button{
+  width: 260rpx;
+  height: 110rpx;
+  background-color: #FE7501;
+  text-align: center;
+  line-height: 110rpx;
+  color:#fff;
+  margin-right: 0;
+  border-radius: 0;
+}
+.pay .fprice{
+  width: 60%;
+  text-align: right;
+}
+.pay .fprice .moeny{
+  color:#FE7501;
+}

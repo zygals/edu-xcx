@@ -1,0 +1,515 @@
+/* 全局样式 */
+
+view, button, text {
+  font-family: '微软雅黑';
+}
+
+/*首页*/
+
+.slide-image {
+  width: 100%;
+  height: 340rpx;
+}
+
+/* 导航区样式 */
+
+.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 85%;
+  margin: 0 auto;
+}
+
+.index_center {
+  width: 187.5rpx;
+  height: 262rpx;
+}
+
+.index_center image {
+  width: 121rpx;
+  height: 123rpx;
+  display: block;
+  margin: 48rpx auto;
+  margin-bottom: 2rpx;
+}
+
+.index_center view {
+  font-size: 28rpx;
+  text-align: center;
+  margin-top: 10rpx;
+  letter-spacing: 1rpx;
+}
+
+/* 中间内容区 */
+
+.wrap {
+  width: 96%;
+  margin: 0 auto;
+}
+
+.boon_top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.boon_top .nav-title {
+  display: flex;
+  margin-left: 23%;
+}
+
+.boon_top .heng {
+  width: 100rpx;
+  height: 2rpx;
+  background: #ddd;
+  margin: auto 0rpx;
+}
+
+.boon_top .size {
+  font-size: 36rpx;
+  line-height: 100rpx;
+  margin: 0 25rpx;
+  font-weight: bold;
+}
+
+.boon_top .more {
+  line-height: 100rpx;
+  font-size: 24rpx;
+  color: #777;
+}
+
+/* 选课推荐模块  */
+
+.recommend {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+.recommend .college-pic {
+  width: 50%;
+  margin-bottom: 40rpx;
+}
+
+.recommend .college-pic image {
+  width: 96%;
+  height: 240rpx;
+}
+
+.recommend .college-pic .college {
+  font-size: 28rpx;
+  letter-spacing: 1rpx;
+  line-height: 30rpx;
+}
+
+/* 课程报名模块 */
+
+.course {
+  border-top: 1rpx solid #ecedeb;
+  overflow: hidden;
+}
+
+.course:last-child {
+  border-bottom: 1rpx solid #ecedeb;
+}
+
+.course-pic {
+  float: left;
+}
+.course-desc {
+  margin-left: 225rpx;
+}
+.course-pic image {
+  width: 180rpx;
+  height: 210rpx;
+  margin: 30rpx 30rpx 30rpx 0;
+}
+
+.course-name {
+  float: left;
+  margin-top: 30rpx;
+}
+
+.tenant {
+  font-size: 28rpx;
+}
+
+.price {
+  font-size: 28rpx;
+  line-height: 80rpx;
+  color: #fe9727;
+}
+
+.course-time {
+  float: right;
+  font-size: 24rpx;
+  margin-top: 40rpx;
+  color: #5a5a5a;
+}
+
+.course-boon {
+  padding-bottom: 50rpx;
+}
+
+/* 专业解析模块 */
+
+.read-desc {
+  margin-left: 8rpx;
+}
+
+.read-title {
+  font-size: 32rpx;
+  font-weight: bold;
+  margin: 20rpx 0;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  line-height: 50rpx;
+  text-indent: 22rpx;
+}
+
+.read-content {
+  position: relative;
+  font-size: 24rpx;
+  font-weight: normal;
+  margin-bottom: 20rpx;
+  line-height: 45rpx;
+  text-indent: 45rpx;
+}
+
+.read-time {
+  text-align: right;
+  margin-right: 20rpx;
+  font-size: 24rpx;
+  color: #999;
+  margin-bottom: 15rpx;
+}
+
+.read-more {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  color: #50a1fd;
+}
+
+.read-boon {
+  padding-bottom: 50rpx;
+}
+
+.boon_con {
+  padding: 24rpx;
+  margin-top: -24rpx;
+}
+
+.boon_inner {
+  width: 361rpx;
+  margin: 5rpx;
+  height: 289rpx;
+  background: #fff;
+  text-align: center;
+}
+
+.boon_inner image {
+  width: 199rpx;
+  height: 160rpx;
+  display: block;
+  margin: 0 auto;
+}
+
+.boon_inner .font1 {
+  font-size: 30rpx;
+  color: #f3ae1a;
+  margin: 30rpx 0 0 20rpx;
+}
+
+.boon_inner .font2 {
+  font-size: 22rpx;
+  margin: 20rpx 0 0 15rpx;
+}
+
+.height12 {
+  width: 100%;
+  height: 20rpx;
+  background: #ecedeb;
+  margin: 0 auto;
+}
+
+.gromm_top {
+  overflow: hidden;
+  padding-left: 28rpx;
+  border-bottom: 1rpx solid #9df58a;
+  padding-bottom: 15rpx;
+}
+
+.gromm_top1 {
+  width: 20rpx;
+  height: 20rpx;
+  background: #9df58a;
+  float: left;
+  margin-top: 10rpx;
+}
+
+.gromm_top2 {
+  font-size: 30rpx;
+  float: left;
+  margin-left: 30rpx;
+}
+
+.gromm_top3 {
+  font-size: 22rpx;
+  float: right;
+  color: #777;
+}
+
+.grom {
+  width: 1000rpx;
+  white-space: nowrap;
+}
+
+.grom1 {
+  width: 200rpx;
+  height: 270rpx;
+  margin: 15rpx;
+  text-align: center;
+  font-size: 24rpx;
+  display: inline-block;
+}
+
+.grom1 image {
+  width: 170rpx;
+  height: 170rpx;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 20rpx;
+  margin-top: 30rpx;
+  border-radius: 50%;
+}
+
+.absolute {
+  position: absolute;
+  right: 25rpx;
+  top: 42rpx;
+  font-size: 22rpx;
+  color: #777;
+}
+
+.plans {
+  width: 249rpx;
+  height: 290rpx;
+  float: left;
+  border-right: 1rpx solid #ddd;
+  border-bottom: 1rpx solid #ddd;
+}
+
+.plans image {
+  width: 230rpx;
+  height: 217rpx;
+  display: block;
+  margin: 10rpx auto;
+}
+
+.plans .font {
+  font-size: 24rpx;
+  text-align: center;
+}
+
+.plans_bottom {
+  border-bottom: none;
+}
+
+.plans_right {
+  border-right: none;
+}
+
+.heart .ren {
+  width: 80rpx;
+  height: 80rpx;
+  margin-right: 20rpx;
+  margin-top: 30rpx;
+}
+
+.heart .tou {
+  width: 22rpx;
+  height: 41rpx;
+  margin-top: 80rpx;
+  margin-right: -1rpx;
+  z-index: 51;
+}
+
+.heart {
+  padding: 30rpx;
+}
+
+.heart_con {
+  width: 570rpx;
+  z-index: 10;
+  border: 1rpx solid #d3d3d3;
+}
+
+.heart_con1 {
+  overflow: hidden;
+  padding: 35rpx 20rpx 28rpx 30rpx;
+}
+
+.heart_con1 .font1 {
+  float: left;
+  font-size: 30rpx;
+  color: #61615f;
+}
+
+.heart_con1 .font2 {
+  float: right;
+  font-size: 20rpx;
+  color: #8d8c8b;
+}
+
+.hear_inner1 {
+  width: 128rpx;
+  margin-left: 20rpx;
+  margin-right: 25rpx;
+}
+
+.hear_inner1 image {
+  width: 128rpx;
+  height: 129rpx;
+}
+
+.hear_inner1 view {
+  color: #656464;
+  font-size: 20rpx;
+  text-align: center;
+}
+
+.hear_inn {
+  font-size: 26rpx;
+  margin-bottom: 15rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-all;
+}
+
+.hear_inn .inn1 {
+  padding-bottom: 5rpx;
+}
+
+.jie {
+  font-size: 20rpx;
+  overflow: hidden;
+}
+
+.jie, .jie1 {
+  float: right;
+  margin-right: 35rpx;
+  margin-bottom: 10rpx;
+}
+
+.jie .jie2 {
+  margin-right: 0rpx;
+}
+
+.jie, .jie1 .kou2 {
+  color: #f3ae1a;
+}
+
+/*购物车*/
+
+.shop1 {
+  font-size: 24rpx;
+  margin-top: 332rpx;
+  text-align: center;
+}
+
+.shop2 {
+  font-size: 30rpx;
+  margin-top: 30rpx;
+  margin-bottom: 80rpx;
+  text-align: center;
+}
+
+.shop3 {
+  display: block;
+  width: 256rpx;
+  height: 80rpx;
+  color: #fff;
+  background: #f3ae1a;
+  margin: 0 auto;
+}
+
+/*我的*/
+
+.person-head {
+  margin-bottom: 30rpx;
+}
+
+.person-head image {
+  position: relative;
+  width: 750rpx;
+  height: 250rpx;
+}
+
+.person-info {
+  position: absolute;
+  z-index: 999;
+  left: 10%;
+  top: 10%;
+}
+
+.person-info image {
+  float: left;
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 50%;
+}
+
+.person-name {
+  margin-left: 220rpx;
+  font-size: 28rpx;
+}
+
+.sp1 {
+  font-weight: bold;
+  margin: 30rpx 0 20rpx 0;
+}
+
+.list {
+  overflow: hidden;
+  height: 120rpx;
+  border-top: 1rpx solid #ddd;
+}
+
+.list .im1 {
+  width: 60rpx;
+  height: 62rpx;
+  display: block;
+  float: left;
+  margin: 29rpx 30rpx;
+}
+
+.list .list_font {
+  display: block;
+  float: left;
+  font-size: 30rpx;
+  line-height: 120rpx;
+}
+
+.list .im2 {
+  width: 14rpx;
+  height: 28rpx;
+  float: right;
+  display: block;
+  margin: 46rpx 30rpx;
+}
+
+.person-list {
+  border-bottom: 1rpx solid #ddd;
+  margin-top: 80rpx;
+}
+.to_bottom{
+  text-align:center;
+  font-size:26rpx;
+  border-bottom:1px solid #ecedeb;
+  line-height:3rpx;
+  color: #999;
+}

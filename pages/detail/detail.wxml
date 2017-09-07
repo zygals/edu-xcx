@@ -1,0 +1,16 @@
+<!--pages/detail/detail.wxml-->
+<view class="container">
+  <view class="zttitle">
+    {{article.title}}
+  </view>
+  <view class="timelai">
+    <text class="time">发布时间：{{article.create_time}}</text>
+    <text class="laiy">文章来源：本站</text>
+  </view>
+  <view class="wzcon">
+    <!--<image src="{{imgurl+article.img}}"></image> -->
+      <text class="wzi">
+        {{article.cont}}
+      </text>
+  </view>
+</view>

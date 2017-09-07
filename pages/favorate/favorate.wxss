@@ -1,0 +1,43 @@
+.wrap {
+  width: 96%;
+  margin: 0 auto;
+}
+
+.course-pic {
+  float: left;
+}
+.course-pic image {
+  width: 167rpx;
+  height: 114rpx;
+  margin: 20rpx 40rpx 30rpx 0;
+}
+.course-name {
+  float: left;
+  margin-top: 15rpx;
+}
+.tenant {
+  font-size: 32rpx;
+}
+.price {
+  font-size: 28rpx;
+  line-height: 80rpx;
+  color: #fe9727;
+}
+.course-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  font-size: 24rpx;
+}
+.tag {
+  text-indent: 5rpx;
+  font-size: 32rpx;
+  font-weight: bold;
+  letter-spacing: 2rpx;
+}
+.course-time {
+  color: #5a5a5a;
+}
+.course-content {
+  padding-bottom: 40rpx;
+}
