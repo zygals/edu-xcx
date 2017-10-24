@@ -58,7 +58,7 @@
           </view>
         </block>
         <block wx:else>
-          <view class="no_cont">请在后台添加院校推荐</view>
+          <!-- <view class="no_cont">请在后台添加院校推荐</view> -->
         </block>
       </view>
       <view class="recommend">
@@ -71,7 +71,7 @@
           </view>
         </block>
         <block wx:else>
-          <view class="no_cont">请在后台添加院校推荐</view>
+          <!-- <view class="no_cont">请在后台添加院校推荐</view> -->
         </block>
       </view>
     </view>
@@ -112,7 +112,7 @@
         </view>
       </block>
       <block wx:else>
-        <view class="no_cont">请在后台添加书目首页推荐</view>
+        <!-- <view class="no_cont">请在后台添加书目首页推荐</view> -->
       </block>
     </view>
   </view>
@@ -154,7 +154,7 @@
       </view>
       </block>
       <block wx:else>
-        <view class="no_cont">请在后台添加资讯首页推荐</view>
+        <!-- <view class="no_cont">请在后台添加资讯首页推荐</view> -->
       </block>
       
     </view>

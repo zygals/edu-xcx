@@ -21,7 +21,7 @@
         <view class='nav-name' wx:for="{{cate_article}}" wx:key="id"><text bindtap="tapGetListByCateId" data-cate_article_id="{{item.id}}">{{item.name}}</text></view>
      </block>
         <block wx:else>
-          <view class="no_cont ">请在后台添加资讯分类</view>
+          <!-- <view class="no_cont ">请在后台添加资讯分类</view> -->
         </block>
        
     </view>
@@ -39,7 +39,7 @@
           </view>
       </block>
       <block wx:else>
-        <view class="no_cont">请在后台添加资讯</view>
+        <!-- <view class="no_cont">请在后台添加资讯</view> -->
       </block>
       <view class="to_bottom" hidden="{{dxHidden}}">--已到底线--</view>
       </view>

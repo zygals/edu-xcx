@@ -113,7 +113,7 @@
 }
 .selo .czuo.tl{
   text-align: left;
-  width: 83%;
+  width: 72%;
 }
 .selo .czuo .jian,.selo .czuo .jia{
   width: 40rpx;

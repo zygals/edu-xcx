@@ -1,6 +1,6 @@
 <view class="conatienr">
 
-<block wx:if="{{order.address_id==0}}">
+<block wx:if="{{order.address_id==0 || address==null}}">
  
       <view class="no_address_wrap" bindtap="chooseAdress_">
           <view class="no_address"><icon type="warn"  class="icon_address"/>请先添加地址</view>
@@ -47,7 +47,7 @@
     </view>
     <view class="selo b3">
       <text class="gmsl">配送时间</text>
-      <text class="czuo tl">15:00之前下单，当开发货</text>
+      <text class="czuo tl">15:00之前下单，当天发货</text>
     </view>
     <view class="selo b3">
       <text class="gmsl">运费险</text>

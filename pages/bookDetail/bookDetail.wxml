@@ -17,7 +17,7 @@
     </view>
   </block>
   <block wx:else>
-    <view class="no_cont">此资料不存在！</view>
+    <!-- <view class="no_cont">此资料不存在！</view> -->
   </block>
 </view>
 <view class="book-footer">
@@ -28,10 +28,8 @@
         <view class="collection" style="color: {{color}}">{{collection}}
         </view>
       </view>
-  
         <view class="pay" bindtap="tapAddOrder">提交订单 
         </view>
-    
     </view>
   </view>
 </view>

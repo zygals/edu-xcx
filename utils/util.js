@@ -25,7 +25,7 @@ function httpG(url, data, callback) {
     },
     complete: function (res) {
       wx.hideLoading();
-     console.log("get-complete:", res.data)
+   //  console.log("get-complete:", res.data)
       if (res.data.code != 0) {
           wx.showToast({
           title: res.data.msg,
@@ -48,7 +48,7 @@ function httpP(url, data, callback) {
       console.log('request-post error:', res);
     },
     complete: function (res) {
-      console.log("post-complete:", res.data)
+     // console.log("post-complete:", res.data)
       if (res.data.code != 0) {
         wx.showToast({
           title: res.data.msg,
